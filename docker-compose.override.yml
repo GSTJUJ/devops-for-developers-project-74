@@ -8,7 +8,8 @@ services:
     ports:
       - "8080:8080"
     command: make dev
-
+    env_file:
+      - .env
   caddy:
     image: caddy:2
     ports:
